@@ -1,0 +1,14 @@
+<div>
+  Dashboard!!!!!!!!
+  <div class='card-deck'>
+    <div *ngFor='let dev of devList' class='card' style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{dev.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">State {{dev.state ? 'on' : 'off'}}</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a class="card-link" (click)='switch(dev.addr)'>Switch</a>
+      </div>
+    </div>
+  </div>
+</div>
